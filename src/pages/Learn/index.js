@@ -1,6 +1,7 @@
 import React from 'react';
 import { CourseVideo, LearnLeftSide } from '../../components';
 import LearnRightSide from '../../components/moleculs/LearnRightSide';
+import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
 import './index.scss';
 
 const Learn = () => {
@@ -8,7 +9,13 @@ const Learn = () => {
     <div className="learn-container">
       <LearnLeftSide />
       <div className="learn-content">
-        <CourseVideo />
+        <Router>
+          <Switch>
+            <Route path="/learn/:courseName/:epId">
+              <CourseVideo />
+            </Route>
+          </Switch>
+        </Router>
       </div>
       <LearnRightSide />
     </div>

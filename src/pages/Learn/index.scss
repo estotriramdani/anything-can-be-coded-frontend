@@ -7,9 +7,13 @@
   grid-template-columns: 280px 1fr 280px;
   min-height: 100vh;
   grid-gap: 32px;
+  position: relative;
   .learn-left-side {
-    // max-height: 100vh;
-    // overflow: auto;
+    position: sticky;
+    position: -webkit-sticky;
+    top: 0;
+    max-height: 100vh;
+    overflow: auto;
     background-color: #fff;
     box-shadow: 4px 0 15px rgba(0, 0, 0, 0.05);
     padding: 23px 23px;
@@ -25,9 +29,15 @@
     }
   }
   .learn-content {
+    // max-height: 100vh;
+    // overflow: auto;
     padding-top: 23px;
   }
   .learn-right-side {
+    position: sticky;
+    position: -webkit-sticky;
+    top: 0;
+    max-height: 100vh;
     background-color: #fff;
     padding: 23px 23px;
     box-shadow: -4px 0 15px rgba(0, 0, 0, 0.05);

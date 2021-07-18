@@ -10,7 +10,7 @@ const LearnRightSide = () => {
       <AllCoursesList
         title="Pendahuluan (Ilmu Komputer, Pemrograman, d..."
         episodeNumber={1}
-        style={{ color: 'black' }}
+        style={{ color: '#fe0000' }}
       />
       <AllCoursesList
         title="Memahami Fungsi Komentar Pada Bahasa Pemrograman"
