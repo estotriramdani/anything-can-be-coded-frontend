@@ -1,7 +1,7 @@
 import React from 'react';
 import './index.scss';
 
-const Link = ({ title, ...rest }) => {
+const LinkComponent = ({ title, ...rest }) => {
   return (
     <button className="link" {...rest}>
       {title}
@@ -9,4 +9,4 @@ const Link = ({ title, ...rest }) => {
   );
 };
 
-export default Link;
+export default LinkComponent;

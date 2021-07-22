@@ -1,8 +1,10 @@
 import React, { useEffect } from 'react';
+import { withRouter } from 'react-router';
 import { Button, Gap } from '../../atoms';
 import './index.scss';
 
-const CourseVideo = () => {
+const CourseVideo = (props) => {
+  console.log(props.match);
   useEffect(() => {
     document.getElementsByTagName('title')[0].innerHTML = 'Course Video';
   }, []);
@@ -13,9 +15,9 @@ const CourseVideo = () => {
         className="course-video-video"
         src="https://www.youtube.com/embed/t4TQGux6r7M"
         title="YouTube video player"
-        frameborder="0"
+        frameBorder={0}
         allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-        allowfullscreen
+        allowFullScreen={true}
       ></iframe>
       <div className="course-video-heading">
         <div className="course-video-heading-title-subtitle">
@@ -55,4 +57,4 @@ const CourseVideo = () => {
   );
 };
 
-export default CourseVideo;
+export default withRouter(CourseVideo);

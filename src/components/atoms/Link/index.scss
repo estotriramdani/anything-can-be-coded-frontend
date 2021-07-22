@@ -5,7 +5,8 @@
   border: none;
   outline: none;
   color: #282828;
-  &:hover {
+  &:hover,
+  &:focus {
     color: #2693e6;
   }
 }

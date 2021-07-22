@@ -4,6 +4,8 @@ import CommunityCorner from './CommunityCorner';
 import AllCoursesList from './AllCoursesList';
 import CourseVideo from './CourseVideo';
 import LearnLeftSide from './LearnLeftSide';
+import LearnContent from './LearnContent';
+import LearnRightSide from './LearnRightSide';
 
 export {
   CourseCard,
@@ -12,4 +14,6 @@ export {
   AllCoursesList,
   CourseVideo,
   LearnLeftSide,
+  LearnContent,
+  LearnRightSide,
 };

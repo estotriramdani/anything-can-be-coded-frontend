@@ -1,0 +1,2 @@
+1. Validasi kelasnya, kalau kelasnya ada baru validasi episode.
+2. Kelas Lainnya diambil dari course secara acak atau berdasarkan bahasa video yang sedang dibuka
